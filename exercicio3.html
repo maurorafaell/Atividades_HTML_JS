@@ -1,0 +1,42 @@
+<!-- *************************************************** -->
+<!-- Prática de programação em JavaScript - arquivo HTML -->
+<!-- *************************************************** -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+    </head>
+     
+    <!-- Forma de referenciar arquivo javaScript-->
+    <!-- Informar o nome do arquivo que possui o código javaScript-->
+    <script src="exercicio3javascript.js"></script>
+
+    <body>
+
+        <h1> Digite um número: </h1>
+
+        <!-- Foi adicionado na tela um campo de texto para inserção de algum valor-->
+        <!-- 'type'         indica o tipo de dado a ser recebido pelo campo-->
+        <!-- 'placeholder'  mostra, dentro do campo, uma mensagem informando o dado esperado no preenchimento-->
+        <!-- 'name'         serve para representar uma coleção de valores, enviados através de um formulário, para o servidor.-->
+        <!-- 'size'         define o tamanho do campo na tela-->
+        <!-- 'id'           identifica de forma única este campo para vículo em scripts e css-->
+        <input type="text" placeholder="Digite um número" name="Digite" size="20" id="numero">
+        
+        <!-- Função 'onclick' recebe a definição criada pela função no código do JavaScript-->
+        <button onclick="clicar()"> Calcular </button>
+
+        <!-- Função 'onclick' com 'window.location.reload()' recarrega a página limpando todas as execuções efetuadas -->
+        <input type="button" value="Atualizar página" onClick="window.location.reload()"> 
+
+        <!-- Foi adicionado esta 'div'e um 'h3' para adcionarmos um 'id' e mostrar na tela o resultado do dado inserido no campo 'numero'-->
+        <div>
+            <h3 id = "resp"></h3>
+        </div>
+
+    </body>
+</html>
